@@ -3,3 +3,9 @@
 ################################################################################
 
 /Spider/bin/Debug/netcoreapp2.1
+/.vs/Spider/v15/Server/sqlite3
+/Spider/obj
+/Spider.Http/bin/Debug/netcoreapp2.1
+/Spider.Http/obj
+/Spider.Infrastructure/bin/Debug/netcoreapp2.1
+/Spider.Infrastructure/obj
