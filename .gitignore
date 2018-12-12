@@ -9,3 +9,7 @@
 /Spider.Http/obj
 /Spider.Infrastructure/bin/Debug/netcoreapp2.1
 /Spider.Infrastructure/obj
+/Spider.Winxin/obj/Debug/netcoreapp2.1
+/Spider.Winxin/obj
+/Spider.Winxin/bin/Debug/netcoreapp2.1
+/.vs/Spider/v15
