@@ -4,21 +4,12 @@ using System.Text;
 
 namespace Spider.Weixin.Entity
 {
+    /// <summary>
+    /// 文章列表
+    /// </summary>
     public class ProfileListInfo
     {
-        /// <summary>
-        /// 详细页Url
-        /// </summary>
-        public string Url { get; set; }
-
-        /// <summary>
-        /// 标题
-        /// </summary>
-        public string Title { get; set; }
-
-        /// <summary>
-        /// 简短描述
-        /// </summary>
-        public string Description { get; set; }
+        public AppMsgExtInfo app_msg_ext_info { get; set; }
+        public CommMsgInfo comm_msg_info { get; set; }
     }
 }
