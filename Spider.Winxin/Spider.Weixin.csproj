@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Spider.Http\Spider.Http.csproj" />
+    <ProjectReference Include="..\Spider.Infrastructure\Spider.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

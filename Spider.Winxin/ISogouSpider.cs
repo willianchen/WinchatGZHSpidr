@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spider.Weixin.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,8 @@ namespace Spider.Weixin
 {
     public interface ISogouSpider
     {
-        string WeixinSearch(string keywords);
+        List<SearchInfo> WeixinSearch(string keywords, int type);
+
+        string WeixinSearchToTargetAccount(string keyword, string account);
     }
 }
