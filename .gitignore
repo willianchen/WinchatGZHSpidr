@@ -11,3 +11,9 @@
 /Spider.Infrastructure/obj
 /.vs/Spider/DesignTimeBuild/.dtbcache
 /.vs/Spider/v15/.suo
+/Spider.Data/obj/Debug/netcoreapp2.1
+/Spider.Data/bin/Debug/netcoreapp2.1
+/Spider.Data/obj
+/Spider.Test/bin/Debug/netcoreapp2.1
+/Spider.Test/obj
+/Spider.Winxin/bin/Debug/netcoreapp2.1

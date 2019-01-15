@@ -1,0 +1,14 @@
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Weixin.deps.json
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Weixin.dll
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Weixin.pdb
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Http.dll
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Infrastructure.dll
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Http.pdb
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Infrastructure.pdb
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.csprojAssemblyReference.cache
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.csproj.CoreCompileInputs.cache
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.AssemblyInfoInputs.cache
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.AssemblyInfo.cs
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.csproj.CopyComplete
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.dll
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.pdb
