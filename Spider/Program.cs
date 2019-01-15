@@ -1,4 +1,6 @@
-﻿using Spider.Http;
+﻿using Newtonsoft.Json;
+using Spider.Http;
+using Spider.Weixin;
 using System;
 
 namespace Spider
@@ -7,22 +9,28 @@ namespace Spider
     {
         static void Main(string[] args)
         {
-            string url = "http://mp.weixin.qq.com/profile?src=3&timestamp=1544507891&ver=1&signature=w6B3zg5yu6of13ZNzA7w8LiGIJw3k4jvs4rWrc-zjHnBRz4gFKvvLRBYeAYL1xMDck6Slf4qlGSLlTefGi8DTQ==";//请求地址
+            // string url = "http://mp.weixin.qq.com/profile?src=3&timestamp=1544617977&ver=1&signature=XC34cNlOOSAZ2LNU-6wWUqIJH28AnusOuQg1qqiCoaHQxZC6MROtaGouDiGE4MPJ-2MUB2ci1FTZPX*1EljSFg==";//请求地址
+            string url = "http://mp.weixin.qq.com/profile?src=3&timestamp=1544841689&ver=1&signature=D1z5hwr9SQQdbJ4mhi3ZmJAIoEHNnO4seZ6F02GuWIJ0fxnqi3d3xlXppph0xLN5KpNtZQGFceVZtXYAn94reA==";//请求地址
 
-            string res = string.Empty;//请求结果,请求类型不是图片时有效
+            var spider = new WeixinSpider();
+            //var result = spider.GetListInfo(url);
+            //foreach (var t in result)
+            //{
+            //    Console.WriteLine(JsonConvert.SerializeObject(t));
+            //}
+            //spider.WeixinSearch("腾讯视频");
+            var turl = spider.WeixinSearchToTargetAccount("虎嗅APP", "huxiu_com");
+            Console.WriteLine(turl);
+            if (turl != "")
+            {
+                var result = spider.GetListInfo(turl);
+                foreach (var t in result)
+                {
+                    var detail = spider.Detail(t.app_msg_ext_info.content_url);
+                    Console.WriteLine(detail);
+                }
+            }
 
-            System.Net.CookieContainer cc = new System.Net.CookieContainer();//自动处理Cookie对象
-
-            HttpHelpers helper = new HttpHelpers();//发起请求对象
-            HttpItems items = new HttpItems();//请求设置对象
-            HttpResults hr = new HttpResults();//请求结果
-            items.Url = url; //设置请求地址
-            items.Container = cc;//自动处理Cookie时,每次提交时对cc赋值即可
-            hr = helper.AddHttpItem(items).GetHtmlAsync().Result;//发起异步请求
-
-            res = hr.Html;//得到请求结果
-
-            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
