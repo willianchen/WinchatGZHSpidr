@@ -1,27 +1,18 @@
-﻿using System;
+﻿using Dapper;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Spider.Data
 {
-    public class MySqlDataBase : IDataBase
+    public class MySqlDataBase : DataBase
     {
-        private IDataOptionProvider dataOptionProvider { get; set; }
-
-        private IDbConnection dbConnection { get; set; }
-
-        public MySqlDataBase(IDataOptionProvider _dataOptionProvider)
+        public MySqlDataBase(IDataOptionProvider _dataOptionProvider) : base(_dataOptionProvider)
         {
-            dataOptionProvider = _dataOptionProvider;
-        }
-
-        public IDbConnection GetConnection()
-        {
-            if (dbConnection == null)
-                return new SqlConnection(dataOptionProvider.GetDataOption().ConnectString));
-            return dbConnection;
         }
     }
 }

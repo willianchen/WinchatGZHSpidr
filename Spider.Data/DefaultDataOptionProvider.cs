@@ -8,7 +8,7 @@ namespace Spider.Data
     {
         public DataOption GetDataOption()
         {
-            return new DataOption() { ConnectString = "", databaseType = DatabaseType.MySql };
+            return new DataOption() { ConnectString = "Database=t_wechat;Data Source=127.0.0.1;Port=3306;User Id=root;Password=123456;Charset=utf8;TreatTinyAsBoolean=false;", databaseType = DatabaseType.MySql };
         }
     }
 }

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Spider.Data\Spider.Data.csproj" />
     <ProjectReference Include="..\Spider.Infrastructure\Spider.Infrastructure.csproj" />
   </ItemGroup>
 
