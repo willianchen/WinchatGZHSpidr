@@ -26,7 +26,7 @@ namespace Spider.Test
             Parallel.For(0, cnt, i =>
             {
                 string sql = $"insert into t_guid values('{Guid.NewGuid()}','{DateTime.Now.ToString()}')";
-                database.Execute(sql);
+                database.ExecuteAsync(sql);
             });
 
             // }
@@ -40,7 +40,7 @@ namespace Spider.Test
             Parallel.For(0, cnt, i =>
             {
                 string sql2 = $"insert into t_guid values('{Guid.NewGuid()}','{DateTime.Now.ToString()}')";
-                MsSqlserver.Execute(sql2);
+                MsSqlserver.ExecuteAsync(sql2);
             });
             //  }
             stopwatch.Stop(); //  停止监视

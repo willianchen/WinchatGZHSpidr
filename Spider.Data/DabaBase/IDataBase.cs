@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Spider.Data
 {
-    public interface IDataBase
+    public interface IDataBase : IDisposable
     {
         /// <summary>
         /// 获取数据库连接
