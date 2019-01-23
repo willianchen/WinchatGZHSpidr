@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Spider.Data\Spider.Data.csproj" />
     <ProjectReference Include="..\Spider.Infrastructure\Spider.Infrastructure.csproj" />
+    <ProjectReference Include="..\Spider.Winxin\Spider.Weixin.csproj" />
   </ItemGroup>
 
   <ItemGroup>

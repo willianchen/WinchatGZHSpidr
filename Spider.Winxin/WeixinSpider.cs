@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using Spider.Http;
 using Spider.Infrastructure.File;
 using Spider.Weixin.Constant;
+using Spider.Weixin.Data.Model;
 using Spider.Weixin.Entity;
 
 namespace Spider.Weixin
@@ -52,6 +53,19 @@ namespace Spider.Weixin
             return hr.Html;
         }
 
+        /// <summary>
+        /// 采集列表数据
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public string GetListHtml(WeChatAccountModel model)
+        {
+            HttpHelpers helper = new HttpHelpers();//发起请求对象
+            var hr = helper.SetUrl(model.FSpiderUrl).GetHtml();
+            var fileName = Guid.NewGuid();
+            new DefaultFileStore().SaveAsTextAsyc(hr.Html, "D:\\SpiderRoot", $"{fileName}.html");
+            return hr.Html;
+        }
 
         /// <summary>
         ///  从网页内容提取出最近文章内容（json）
@@ -140,5 +154,7 @@ namespace Spider.Weixin
             var searchResult = WeixinSearch(keyword, 1);
             return searchResult.FirstOrDefault(x => x.Account == account)?.Url;
         }
+
+
     }
 }

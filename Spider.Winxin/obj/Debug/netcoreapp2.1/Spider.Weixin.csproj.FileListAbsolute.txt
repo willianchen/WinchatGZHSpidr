@@ -12,3 +12,5 @@ D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.
 D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.csproj.CopyComplete
 D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.dll
 D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\obj\Debug\netcoreapp2.1\Spider.Weixin.pdb
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Data.dll
+D:\GitWorkSpace\MyWorkSpace\WinchatGZHSpidr\Spider.Winxin\bin\Debug\netcoreapp2.1\Spider.Data.pdb
